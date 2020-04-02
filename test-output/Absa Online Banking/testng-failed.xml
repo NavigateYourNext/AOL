@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Absa Online Banking]">
+  <parameter name="pinNumber" value="10024"/>
+  <parameter name="accountNumber" value="4096492154"/>
+  <test name="Absa Online Banking Test">
+    <classes>
+      <class name="co.za.absa.Test.LoginPageTest"/>
+    </classes>
+  </test> <!-- Absa Online Banking Test -->
+</suite> <!-- Failed suite [Absa Online Banking] -->
