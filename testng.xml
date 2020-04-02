@@ -2,14 +2,16 @@
 
 <suite name="Absa Online Banking">
 
-	<parameter name="accountNumber" value="4096492154" />
-	<parameter name="pinNumber" value="10024" />
+	<parameter name="accountNumber" value="9050955490" />
+	<parameter name="pinNumber" value="55490" />
+	<parameter name="passphrase" value="password1" />
 
 	<test name="Absa Online Banking Test">
 
 		<classes>
-
+		
 			<class name="co.za.absa.Test.LoginPageTest" />
+			<class name="co.za.absa.Test.SplitPasswordPageTest" />
 
 		</classes>
 

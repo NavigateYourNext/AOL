@@ -1,44 +1,41 @@
 package co.za.absa.Test;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import co.za.absa.BaseClass.BaseClass;
+import co.za.absa.WebPages.HomePage;
 import co.za.absa.WebPages.LoginPage;
 import co.za.absa.WebPages.SplitPasswordPage;
 
-public class LoginPageTest extends BaseClass 
+public class SplitPasswordPageTest extends BaseClass
 {
 	LoginPage loginPage;
 	SplitPasswordPage splitPasswordPage;
+	HomePage homePage;
 	
-	public LoginPageTest()
+	public SplitPasswordPageTest()
 	{
 		super();
 	}
 	
 	@BeforeMethod
-	public void setUp() throws Exception
+	@Parameters({"accountNumber","pinNumber"})
+	public void setUp(String accountNumber,String pinNumber) throws Exception
 	{
 		closeExistingBrowser();
 		initialisation();
-	}
-	
-	@Test
-	@Parameters({"accountNumber","pinNumber"})
-	public void loginUser(@Optional("9050955490")String accountNumber,@Optional("55490")String pinNumber)
-	{
 		loginPage = new LoginPage();
 		splitPasswordPage = loginPage.loginUser(accountNumber, pinNumber);
 	}
 	
-	@AfterMethod
-	public void tearDown()
+	@Test
+	@Parameters({"passphrase"})
+	public void enterPara(@Optional("password1")String passphrase)
 	{
-		closeDriver();
+		homePage = splitPasswordPage.enterParaphrase(passphrase);
+		
 	}
-	
 }
