@@ -1,11 +1,18 @@
 package co.za.absa.BaseClass;
 
 import java.io.FileInputStream;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import co.za.absa.TestUtilities.TimeOut;
 
@@ -13,15 +20,33 @@ public class BaseClass
 {
 	public static WebDriver driver;
 	public static Properties prop;
+	public static ExtentReports extentReports;
+	public static ExtentTest extentTest;
 	
+	
+	public static Logger logger = Logger.getLogger(BaseClass.class);
+	static
+	{
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
+		String date = sdf.format(d);
+	
+		extentReports = new ExtentReports(System.getProperty("user.dir")+"/Extent_Reports/extent_report_"+date+".html",true);
+		extentReports.addSystemInfo("Admin", "Akshay Pradip Shete");
+		extentReports.addSystemInfo("Host", "HP Windows 10");
+		extentReports.addSystemInfo("Date", LocalDateTime.now().toString());	
+	}
 	
 	public BaseClass()
 	{
 		try
 		{
+			
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/resources/prop.properties");
 			prop.load(fis);
+			
+			logger.info("Properties File Loaded Successfully");
 
 		}
 		catch(Exception e)
@@ -51,10 +76,13 @@ public class BaseClass
 		driver.manage().timeouts().pageLoadTimeout(TimeOut.pageLoadTimeout, TimeUnit.SECONDS);
 		
 		driver.get(prop.getProperty("url"));
+		logger.info("URL Loaded Successfully "+prop.getProperty("url"));
 	}
 	
 	public static void closeDriver()
 	{
 		driver.quit();
+		
+		logger.info("Driver Closed");
 	}
 }

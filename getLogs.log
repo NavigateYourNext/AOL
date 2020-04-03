@@ -1,0 +1,27 @@
+2020-04-03 15:32:36,407  INFO [main] BaseClass:49 - Properties File Loaded Successfully
+2020-04-03 15:32:36,407  INFO [main] LoginPageTest:49 - Properties File Loaded Successfully
+2020-04-03 15:32:46,737  INFO [main] SplitPasswordPageTest:79 - URL Loaded Successfully https://eu.absa.co.za/absa-online/login.jsp
+2020-04-03 15:32:46,737  INFO [main] SplitPasswordPageTest:35 - Driver Initiated
+2020-04-03 15:32:46,769  INFO [main] SplitPasswordPageTest:44 - Test Started: com.relevantcodes.extentreports.model.Test@cbbe01a3
+2020-04-03 15:32:46,785  INFO [main] SplitPasswordPageTest:49 - Properties File Loaded Successfully
+2020-04-03 15:32:48,018  INFO [main] SplitPasswordPageTest:49 - Properties File Loaded Successfully
+2020-04-03 15:32:48,022  INFO [main] SplitPasswordPage:52 - Login Successful
+2020-04-03 15:32:49,333  INFO [main] SplitPasswordPage:86 - Driver Closed
+2020-04-03 15:32:49,333  INFO [main] SplitPasswordPage:76 - Test Ended: com.relevantcodes.extentreports.model.Test@cbbe01a3
+2020-04-03 15:32:56,997  INFO [main] SplitPasswordPage:79 - URL Loaded Successfully https://eu.absa.co.za/absa-online/login.jsp
+2020-04-03 15:32:56,997  INFO [main] SplitPasswordPage:39 - Test Started: com.relevantcodes.extentreports.model.Test@e10eac71
+2020-04-03 15:32:56,997  INFO [main] SplitPasswordPage:49 - Properties File Loaded Successfully
+2020-04-03 15:32:57,884  INFO [main] SplitPasswordPage:49 - Properties File Loaded Successfully
+2020-04-03 15:32:57,888  INFO [main] SplitPasswordPage:44 - Login Succesful
+2020-04-03 15:33:19,492  INFO [main] SplitPasswordPage:49 - Properties File Loaded Successfully
+2020-04-03 15:33:19,492  INFO [main] SplitPasswordPage:54 - Para Phrase Entered
+2020-04-03 15:33:19,555 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-04-03 15:33:19,570 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-04-03 15:33:19,570 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-04-03 15:33:19,570 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-04-03 15:33:19,570 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/akshay.shete/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-04-03 15:33:20,133 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-04-03 15:33:20,133 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-04-03 15:33:20,133 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-04-03 15:33:20,133 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-04-03 15:33:20,133 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/akshay.shete/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

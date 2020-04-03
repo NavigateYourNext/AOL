@@ -1,12 +1,14 @@
 package co.za.absa.WebPages;
 
 import java.awt.Robot;
-import java.awt.event.KeyEvent;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import co.za.absa.BaseClass.BaseClass;
 import co.za.absa.TestUtilities.SplitParaPhrase;
@@ -22,6 +24,7 @@ public class SplitPasswordPage extends BaseClass
 	public SplitPasswordPage()
 	{
 		PageFactory.initElements(driver, this);
+		logger = Logger.getLogger(SplitPasswordPage.class);
 	}
 
 
@@ -34,6 +37,7 @@ public class SplitPasswordPage extends BaseClass
 			
 			
 			String paraPhraseValues = firstBlockOfPassword.getAttribute("showmehow");
+			extentTest.log(LogStatus.INFO, "Required Paraphrase Characters Are: "+paraPhraseValues);
 			
 			String[] extractedDigits = SplitParaPhrase.splitPara(paraPhraseValues);
 			String[] getExtractedCharacters = SplitParaPhrase.getRequiredCharacters(extractedDigits, paraPhrase);
@@ -49,7 +53,13 @@ public class SplitPasswordPage extends BaseClass
 			System.out.println(getExtractedCharacters[0]+" "+getExtractedCharacters[1]+" "+getExtractedCharacters[2]);
 		    */
 			
+			extentTest.log(LogStatus.INFO, "Entered Characters Are: "+getExtractedCharacters[0]+","+getExtractedCharacters[1]+","+getExtractedCharacters[2]);
+			
+			logger.info("Entered Characters Are: "+getExtractedCharacters[0]+","+getExtractedCharacters[1]+","+getExtractedCharacters[2]);
+			
 			loginButton.click();
+			
+			extentTest.log(LogStatus.INFO, "Login Button Clicked");
 
 		}
 		catch(Exception e)

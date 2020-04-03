@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Absa Online Banking" duration-ms="19103" started-at="2020-04-02T12:01:37Z" finished-at="2020-04-02T12:01:56Z">
+  <suite name="Absa Online Banking" duration-ms="43773" started-at="2020-04-03T10:02:36Z" finished-at="2020-04-03T10:03:20Z">
     <groups>
     </groups>
-    <test name="Absa Online Banking Test" duration-ms="19103" started-at="2020-04-02T12:01:37Z" finished-at="2020-04-02T12:01:56Z">
+    <test name="Absa Online Banking Test" duration-ms="43773" started-at="2020-04-03T10:02:36Z" finished-at="2020-04-03T10:03:20Z">
       <class name="co.za.absa.Test.SplitPasswordPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:co.za.absa.Test.SplitPasswordPageTest@24aedd7c]" name="setUp" is-config="true" duration-ms="7182" started-at="2020-04-02T17:31:48Z" finished-at="2020-04-02T17:31:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:co.za.absa.Test.SplitPasswordPageTest@ab44ea27]" name="setUp" is-config="true" duration-ms="8555" started-at="2020-04-03T15:32:49Z" finished-at="2020-04-03T15:32:57Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="enterPara(java.lang.String)[pri:0, instance:co.za.absa.Test.SplitPasswordPageTest@24aedd7c]" name="enterPara" duration-ms="1389" started-at="2020-04-02T17:31:55Z" finished-at="2020-04-02T17:31:56Z">
+        <test-method status="PASS" signature="enterPara(java.lang.String)[pri:0, instance:co.za.absa.Test.SplitPasswordPageTest@ab44ea27]" name="enterPara" duration-ms="21604" started-at="2020-04-03T15:32:57Z" finished-at="2020-04-03T15:33:19Z">
           <params>
             <param index="0">
               <value>
@@ -36,11 +36,11 @@
         </test-method> <!-- enterPara -->
       </class> <!-- co.za.absa.Test.SplitPasswordPageTest -->
       <class name="co.za.absa.Test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:co.za.absa.Test.LoginPageTest@bbef5024]" name="setUp" is-config="true" duration-ms="9259" started-at="2020-04-02T17:31:37Z" finished-at="2020-04-02T17:31:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:co.za.absa.Test.LoginPageTest@508f1fee]" name="setUp" is-config="true" duration-ms="10225" started-at="2020-04-03T15:32:36Z" finished-at="2020-04-03T15:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginUser(java.lang.String, java.lang.String)[pri:0, instance:co.za.absa.Test.LoginPageTest@bbef5024]" name="loginUser" duration-ms="454" started-at="2020-04-02T17:31:46Z" finished-at="2020-04-02T17:31:47Z">
+        <test-method status="PASS" signature="loginUser(java.lang.String, java.lang.String)[pri:0, instance:co.za.absa.Test.LoginPageTest@508f1fee]" name="loginUser" duration-ms="1281" started-at="2020-04-03T15:32:46Z" finished-at="2020-04-03T15:32:48Z">
           <params>
             <param index="0">
               <value>
@@ -56,10 +56,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:co.za.absa.Test.LoginPageTest@bbef5024]" name="tearDown" is-config="true" duration-ms="800" started-at="2020-04-02T17:31:47Z" finished-at="2020-04-02T17:31:48Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:co.za.absa.Test.LoginPageTest@508f1fee]" name="tearDown" is-config="true" duration-ms="1307" started-at="2020-04-03T15:32:48Z" finished-at="2020-04-03T15:32:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginUser status=SUCCESS method=LoginPageTest.loginUser(java.lang.String, java.lang.String)[pri:0, instance:co.za.absa.Test.LoginPageTest@508f1fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:co.za.absa.Test.LoginPageTest@508f1fee]" name="flushReport" is-config="true" duration-ms="625" started-at="2020-04-03T15:33:19Z" finished-at="2020-04-03T15:33:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:co.za.absa.Test.SplitPasswordPageTest@ab44ea27]" name="flushReport" is-config="true" duration-ms="125" started-at="2020-04-03T15:33:20Z" finished-at="2020-04-03T15:33:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
       </class> <!-- co.za.absa.Test.LoginPageTest -->
     </test> <!-- Absa Online Banking Test -->
   </suite> <!-- Absa Online Banking -->
