@@ -38,6 +38,7 @@ public class SplitPasswordPage extends BaseClass
 			
 			String paraPhraseValues = firstBlockOfPassword.getAttribute("showmehow");
 			extentTest.log(LogStatus.INFO, "Required Paraphrase Characters Are: "+paraPhraseValues);
+			logger.info("Required Paraphrase Characters Are :"+paraPhraseValues);
 			
 			String[] extractedDigits = SplitParaPhrase.splitPara(paraPhraseValues);
 			String[] getExtractedCharacters = SplitParaPhrase.getRequiredCharacters(extractedDigits, paraPhrase);

@@ -16,6 +16,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 import co.za.absa.TestUtilities.TimeOut;
 
+
 public class BaseClass 
 {
 	public static WebDriver driver;

@@ -1,5 +1,6 @@
 package co.za.absa.WebPages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -24,18 +25,22 @@ public class LoginPage extends BaseClass
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);
+		logger = Logger.getLogger(LoginPage.class);
 	}
 	
 	public SplitPasswordPage loginUser(String accNumber, String pin)
 	{
 		accountNumber.sendKeys(accNumber);
 		extentTest.log(LogStatus.INFO, "Account Number Entered As : "+accNumber);
+		logger.info("Enterd Account Number Is: "+accNumber);
 		pinNumber.sendKeys(pin);
 		extentTest.log(LogStatus.INFO, "PIN Number Entered As : "+pin);
+		logger.info("Enterd PIN Number Is: "+pin);
 		nextButton.click();
 		extentTest.log(LogStatus.INFO, "Next Button CLicked");
 		
 		System.out.println("Login Succesful");
+		logger.info("Yes, Login Successful");
 		
 		return new SplitPasswordPage();
 	}
