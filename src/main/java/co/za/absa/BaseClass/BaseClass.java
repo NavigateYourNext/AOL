@@ -10,17 +10,20 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import co.za.absa.TestUtilities.TimeOut;
+import co.za.absa.TestUtilities.WebEventListener;
 
 
 public class BaseClass 
 {
 	public static WebDriver driver;
 	public static Properties prop;
+	public static EventFiringWebDriver event_firing;
 	public static ExtentReports extentReports;
 	public static ExtentTest extentTest;
 	
@@ -71,6 +74,12 @@ public class BaseClass
 	{
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/resources/chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		//Register WebDriverEventListener with driver
+		event_firing = new EventFiringWebDriver(driver);
+		WebEventListener wdl = new WebEventListener();
+		event_firing.register(wdl);
+		driver = event_firing;
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(TimeOut.implicitWait, TimeUnit.SECONDS);
