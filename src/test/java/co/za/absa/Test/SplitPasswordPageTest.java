@@ -30,7 +30,7 @@ public class SplitPasswordPageTest extends BaseClass
 	
 	@BeforeMethod
 	@Parameters({"accountNumber","pinNumber"})
-	public void setUp(String accountNumber,String pinNumber) throws Exception
+	public void setUp(@Optional("9050955490")String accountNumber,@Optional("55490")String pinNumber) throws Exception
 	{
 		closeExistingBrowser();
 		initialisation();
