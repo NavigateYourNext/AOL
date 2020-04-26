@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.model.ScreenCapture;
 
 import co.za.absa.BaseClass.BaseClass;
 import co.za.absa.WebPages.LoginPage;
@@ -37,7 +38,7 @@ public class LoginPageTest extends BaseClass
 	
 	@Test
 	@Parameters({"accountNumber","pinNumber"})
-	public void loginUser(@Optional("9050955490")String accountNumber,@Optional("55490")String pinNumber)
+	public void loginUser(@Optional("9050955490")String accountNumber,@Optional("55490")String pinNumber)throws Exception
 	{
 		extentTest = extentReports.startTest("Login User Test");
 		
@@ -50,6 +51,8 @@ public class LoginPageTest extends BaseClass
 		extentTest.log(LogStatus.INFO, "Login User Method Called and Split Password Page Object Created");
 		
 		logger.info("Login Successful");
+		
+		extentTest.log(LogStatus.PASS, "Login Succesful",extentTest.addScreenCapture(BaseClass.takeScreenshot(driver, "Login")));
 	}
 	
 	@AfterMethod

@@ -10,7 +10,7 @@
 
 		<classes>
 		
-			<class name="co.za.absa.Test.LoginPageTest" />
+			<class name="co.za.absa.Test.LoginPageTest" /> 
 			<class name="co.za.absa.Test.SplitPasswordPageTest" />
 
 		</classes>

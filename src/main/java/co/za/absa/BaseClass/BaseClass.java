@@ -1,15 +1,22 @@
 package co.za.absa.BaseClass;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -73,6 +80,12 @@ public class BaseClass
 	public static void initialisation()
 	{
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/resources/chromedriver.exe");
+	/*	
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("window-size=1400,800");
+		opt.addArguments("headless");
+		WebDriver driver = new ChromeDriver(opt);*/
+		
 		driver = new ChromeDriver();
 		
 		//Register WebDriverEventListener with driver
@@ -88,6 +101,28 @@ public class BaseClass
 		driver.get(prop.getProperty("url"));
 		logger.info("URL Loaded Successfully "+prop.getProperty("url"));
 	}
+	
+	public static String takeScreenshot(WebDriver driver, String screenshotName)
+	{
+		String destination = null;
+		
+		try
+		{
+			String dateFormat = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+			File src  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			destination = System.getProperty("user.dir")+"/screenshots/"+screenshotName+dateFormat;
+			FileUtils.copyFile(src, new File(destination));
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		
+		
+		return destination;
+	}
+	
+	
 	
 	public static void closeDriver()
 	{

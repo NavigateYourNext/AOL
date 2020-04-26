@@ -1,6 +1,7 @@
 package co.za.absa.WebPages;
 
 import java.awt.Robot;
+import java.awt.event.KeyEvent;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -8,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.gargoylesoftware.htmlunit.javascript.host.event.KeyboardEvent;
 import com.relevantcodes.extentreports.LogStatus;
 
 import co.za.absa.BaseClass.BaseClass;
@@ -42,13 +44,25 @@ public class SplitPasswordPage extends BaseClass
 			
 			String[] extractedDigits = SplitParaPhrase.splitPara(paraPhraseValues);
 			String[] getExtractedCharacters = SplitParaPhrase.getRequiredCharacters(extractedDigits, paraPhrase);
-
+			logger.info("Entered Characters Are: "+getExtractedCharacters[0]+","+getExtractedCharacters[1]+","+getExtractedCharacters[2]);
+			
 			firstBlockOfPassword.click();
 			firstBlockOfPassword.sendKeys(getExtractedCharacters[0]);
 			
-		
+			/*Thread.sleep(1000);
 			action.sendKeys(getExtractedCharacters[1]).build().perform();
-			action.sendKeys(getExtractedCharacters[2]).build().perform();
+			Thread.sleep(1000);
+			action.sendKeys(getExtractedCharacters[2]).build().perform();*/
+			
+			
+			int keyCode_1 = KeyEvent.getExtendedKeyCodeForChar(getExtractedCharacters[1].charAt(0));
+			r.keyPress(keyCode_1);
+			r.keyRelease(keyCode_1);
+			
+			
+			int keyCode_2 = KeyEvent.getExtendedKeyCodeForChar(getExtractedCharacters[2].charAt(0));
+			r.keyPress(keyCode_2);
+			r.keyRelease(keyCode_2);
 			
 			/*System.out.println(paraPhraseValues);
 			System.out.println(getExtractedCharacters[0]+" "+getExtractedCharacters[1]+" "+getExtractedCharacters[2]);
@@ -65,7 +79,7 @@ public class SplitPasswordPage extends BaseClass
 		}
 		catch(Exception e)
 		{
-			System.out.println("Exception Occured While Entering ParaPhrase");
+			System.out.println("Exception Occured While Entering ParaPhrase -> "+e.getMessage());
 		}
 
 		return new HomePage();

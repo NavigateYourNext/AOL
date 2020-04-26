@@ -53,6 +53,7 @@ public class SplitPasswordPageTest extends BaseClass
 		
 		logger.info("Para Phrase Entered");
 		
+		extentTest.log(LogStatus.PASS, "ParaPhrase Entered",extentTest.addScreenCapture(BaseClass.takeScreenshot(driver, "ParaPhrase")));
 	}
 	
 	public void tearDown(ITestResult result)

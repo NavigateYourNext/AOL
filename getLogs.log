@@ -1,38 +1,41 @@
-2020-04-07 15:00:46,280  INFO [main] BaseClass:53 - Properties File Loaded Successfully
-2020-04-07 15:00:46,296  INFO [main] LoginPageTest:53 - Properties File Loaded Successfully
-2020-04-07 15:00:50,015  INFO [main] SplitPasswordPageTest:53 - Properties File Loaded Successfully
-2020-04-07 15:00:51,208  INFO [main] WebEventListener:16 - Before Navigating To :https://eu.absa.co.za/absa-online/login.jsp
-2020-04-07 15:00:54,012  INFO [main] SplitPasswordPageTest:89 - URL Loaded Successfully https://eu.absa.co.za/absa-online/login.jsp
-2020-04-07 15:00:54,013  INFO [main] SplitPasswordPageTest:35 - Driver Initiated
-2020-04-07 15:00:54,025  INFO [main] SplitPasswordPageTest:44 - Test Started: com.relevantcodes.extentreports.model.Test@11dfbc9a
-2020-04-07 15:00:54,027  INFO [main] SplitPasswordPageTest:53 - Properties File Loaded Successfully
-2020-04-07 15:00:54,250  INFO [main] LoginPage:35 - Enterd Account Number Is: 9050955490
-2020-04-07 15:00:54,376  INFO [main] LoginPage:38 - Enterd PIN Number Is: 55490
-2020-04-07 15:00:54,594  INFO [main] LoginPage:43 - Yes, Login Successful
-2020-04-07 15:00:54,596  INFO [main] LoginPage:53 - Properties File Loaded Successfully
-2020-04-07 15:00:54,597  INFO [main] SplitPasswordPage:52 - Login Successful
-2020-04-07 15:00:55,308  INFO [main] SplitPasswordPage:96 - Driver Closed
-2020-04-07 15:00:55,308  INFO [main] SplitPasswordPage:76 - Test Ended: com.relevantcodes.extentreports.model.Test@11dfbc9a
-2020-04-07 15:00:57,987  INFO [main] SplitPasswordPage:53 - Properties File Loaded Successfully
-2020-04-07 15:00:59,169  INFO [main] WebEventListener:16 - Before Navigating To :https://eu.absa.co.za/absa-online/login.jsp
-2020-04-07 15:01:01,473  INFO [main] SplitPasswordPage:89 - URL Loaded Successfully https://eu.absa.co.za/absa-online/login.jsp
-2020-04-07 15:01:01,475  INFO [main] SplitPasswordPage:39 - Test Started: com.relevantcodes.extentreports.model.Test@b5d92f0a
-2020-04-07 15:01:01,475  INFO [main] SplitPasswordPage:53 - Properties File Loaded Successfully
-2020-04-07 15:01:01,714  INFO [main] LoginPage:35 - Enterd Account Number Is: 9050955490
-2020-04-07 15:01:01,834  INFO [main] LoginPage:38 - Enterd PIN Number Is: 55490
-2020-04-07 15:01:02,053  INFO [main] LoginPage:43 - Yes, Login Successful
-2020-04-07 15:01:02,054  INFO [main] LoginPage:53 - Properties File Loaded Successfully
-2020-04-07 15:01:02,054  INFO [main] SplitPasswordPage:44 - Login Succesful
-2020-04-07 15:01:09,251  INFO [main] SplitPasswordPage:53 - Properties File Loaded Successfully
-2020-04-07 15:01:09,253  INFO [main] HomePage:15 - On Homepage
-2020-04-07 15:01:09,253  INFO [main] HomePage:54 - Para Phrase Entered
-2020-04-07 15:01:09,304 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2020-04-07 15:01:09,310 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2020-04-07 15:01:09,321 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2020-04-07 15:01:09,323 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2020-04-07 15:01:09,325 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/akshay.shete/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2020-04-07 15:01:09,781 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2020-04-07 15:01:09,781 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2020-04-07 15:01:09,781 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2020-04-07 15:01:09,781 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2020-04-07 15:01:09,781 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/akshay.shete/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-04-26 16:56:47,590  INFO [main] BaseClass:60 - Properties File Loaded Successfully
+2020-04-26 16:56:47,590  INFO [main] LoginPageTest:60 - Properties File Loaded Successfully
+2020-04-26 16:56:51,159  INFO [main] SplitPasswordPageTest:60 - Properties File Loaded Successfully
+2020-04-26 16:56:52,364  INFO [main] WebEventListener:16 - Before Navigating To :https://eu.absa.co.za/absa-online/login.jsp
+2020-04-26 16:56:54,339  INFO [main] SplitPasswordPageTest:102 - URL Loaded Successfully https://eu.absa.co.za/absa-online/login.jsp
+2020-04-26 16:56:54,340  INFO [main] SplitPasswordPageTest:36 - Driver Initiated
+2020-04-26 16:56:54,358  INFO [main] SplitPasswordPageTest:45 - Test Started: com.relevantcodes.extentreports.model.Test@8333c2b1
+2020-04-26 16:56:54,361  INFO [main] SplitPasswordPageTest:60 - Properties File Loaded Successfully
+2020-04-26 16:56:54,609  INFO [main] LoginPage:35 - Enterd Account Number Is: 9050955490
+2020-04-26 16:56:54,820  INFO [main] LoginPage:38 - Enterd PIN Number Is: 55490
+2020-04-26 16:56:54,945  INFO [main] LoginPage:43 - Yes, Login Successful
+2020-04-26 16:56:54,947  INFO [main] LoginPage:60 - Properties File Loaded Successfully
+2020-04-26 16:56:54,948  INFO [main] SplitPasswordPage:53 - Login Successful
+2020-04-26 16:56:56,298  INFO [main] SplitPasswordPage:131 - Driver Closed
+2020-04-26 16:56:56,298  INFO [main] SplitPasswordPage:79 - Test Ended: com.relevantcodes.extentreports.model.Test@8333c2b1
+2020-04-26 16:56:59,026  INFO [main] SplitPasswordPage:60 - Properties File Loaded Successfully
+2020-04-26 16:57:00,216  INFO [main] WebEventListener:16 - Before Navigating To :https://eu.absa.co.za/absa-online/login.jsp
+2020-04-26 16:57:02,198  INFO [main] SplitPasswordPage:102 - URL Loaded Successfully https://eu.absa.co.za/absa-online/login.jsp
+2020-04-26 16:57:02,199  INFO [main] SplitPasswordPage:39 - Test Started: com.relevantcodes.extentreports.model.Test@435443f4
+2020-04-26 16:57:02,200  INFO [main] SplitPasswordPage:60 - Properties File Loaded Successfully
+2020-04-26 16:57:02,407  INFO [main] LoginPage:35 - Enterd Account Number Is: 9050955490
+2020-04-26 16:57:02,681  INFO [main] LoginPage:38 - Enterd PIN Number Is: 55490
+2020-04-26 16:57:02,801  INFO [main] LoginPage:43 - Yes, Login Successful
+2020-04-26 16:57:02,802  INFO [main] LoginPage:60 - Properties File Loaded Successfully
+2020-04-26 16:57:02,803  INFO [main] SplitPasswordPage:44 - Login Succesful
+2020-04-26 16:57:04,399  INFO [main] SplitPasswordPage:43 - Required Paraphrase Characters Are :Please type the following characters from your password, 1, 2 and 5. This is password character number 1.
+2020-04-26 16:57:04,399  INFO [main] SplitPasswordPage:47 - Entered Characters Are: p,a,w
+2020-04-26 16:57:04,565  INFO [main] SplitPasswordPage:73 - Entered Characters Are: p,a,w
+2020-04-26 16:57:04,674  INFO [main] SplitPasswordPage:60 - Properties File Loaded Successfully
+2020-04-26 16:57:04,675  INFO [main] HomePage:15 - On Homepage
+2020-04-26 16:57:04,675  INFO [main] HomePage:54 - Para Phrase Entered
+2020-04-26 16:57:05,121 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-04-26 16:57:05,123 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-04-26 16:57:05,126 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-04-26 16:57:05,128 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-04-26 16:57:05,129 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/akshay.shete/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-04-26 16:57:05,498 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-04-26 16:57:05,499 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2020-04-26 16:57:05,500 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-04-26 16:57:05,501 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-04-26 16:57:05,502 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/akshay.shete/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

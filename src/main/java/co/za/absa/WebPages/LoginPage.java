@@ -28,7 +28,7 @@ public class LoginPage extends BaseClass
 		logger = Logger.getLogger(LoginPage.class);
 	}
 	
-	public SplitPasswordPage loginUser(String accNumber, String pin)
+	public SplitPasswordPage loginUser(String accNumber, String pin)throws Exception
 	{
 		accountNumber.sendKeys(accNumber);
 		extentTest.log(LogStatus.INFO, "Account Number Entered As : "+accNumber);
