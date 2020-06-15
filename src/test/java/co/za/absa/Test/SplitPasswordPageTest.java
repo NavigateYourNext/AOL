@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import co.za.absa.BaseClass.BaseClass;
+import co.za.absa.TestUtilities.RetryAnalyzer;
 import co.za.absa.WebPages.HomePage;
 import co.za.absa.WebPages.LoginPage;
 import co.za.absa.WebPages.SplitPasswordPage;
@@ -35,23 +36,23 @@ public class SplitPasswordPageTest extends BaseClass
 		closeExistingBrowser();
 		initialisation();
 		
-		extentTest = extentReports.startTest("HomePage LookUp");
+		extentTest = extentReports.startTest("HomePage Login Test");
 		logger.info("Test Started: "+extentTest.getTest());
 		
 		loginPage = new LoginPage();
 		splitPasswordPage = loginPage.loginUser(accountNumber, pinNumber);
-		extentTest.log(LogStatus.INFO, "Login Succesful");
+		extentTest.log(LogStatus.INFO, "Login Successful");
 		logger.info("Login Succesful");
 	}
 	
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	@Parameters({"passphrase"})
-	public void enterPara(@Optional("password1")String passphrase)
+	public void enterParaPhraseTest(@Optional("password")String passphrase)
 	{
 		homePage = splitPasswordPage.enterParaphrase(passphrase);
 		extentTest.log(LogStatus.INFO, "Enter Para Phrase Method Ended");
 		
-		logger.info("Para Phrase Entered");
+		logger.info("Para Phrase Entered Successfully");
 		
 		extentTest.log(LogStatus.PASS, "ParaPhrase Entered",extentTest.addScreenCapture(BaseClass.takeScreenshot(driver, "ParaPhrase")));
 	}

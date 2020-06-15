@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Absa Online Banking]">
   <parameter name="pinNumber" value="55490"/>
-  <parameter name="passphrase" value="password1"/>
+  <parameter name="passphrase" value="password"/>
   <parameter name="accountNumber" value="9050955490"/>
   <test name="Absa Online Banking Test">
     <classes>

@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.relevantcodes.extentreports.model.ScreenCapture;
 
 import co.za.absa.BaseClass.BaseClass;
+import co.za.absa.TestUtilities.RetryAnalyzer;
 import co.za.absa.WebPages.LoginPage;
 import co.za.absa.WebPages.SplitPasswordPage;
 
@@ -36,11 +37,11 @@ public class LoginPageTest extends BaseClass
 		logger.info("Driver Initiated");
 	}
 	
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	@Parameters({"accountNumber","pinNumber"})
-	public void loginUser(@Optional("9050955490")String accountNumber,@Optional("55490")String pinNumber)throws Exception
+	public void loginUserTest(@Optional("9050955490")String accountNumber,@Optional("55490")String pinNumber)throws Exception
 	{
-		extentTest = extentReports.startTest("Login User Test");
+		extentTest = extentReports.startTest("Basic Login Page Test");
 		
 		logger.info("Test Started: "+extentTest.getTest());
 		
@@ -52,7 +53,7 @@ public class LoginPageTest extends BaseClass
 		
 		logger.info("Login Successful");
 		
-		extentTest.log(LogStatus.PASS, "Login Succesful",extentTest.addScreenCapture(BaseClass.takeScreenshot(driver, "Login")));
+		extentTest.log(LogStatus.PASS, "Login Successful",extentTest.addScreenCapture(BaseClass.takeScreenshot(driver, "Login")));
 	}
 	
 	@AfterMethod
