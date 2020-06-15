@@ -10,4 +10,22 @@
       <class name="co.za.absa.Test.SplitPasswordPageTest"/>
     </classes>
   </test> <!-- Absa Online Banking Test -->
+  <test name="Absa Online Banking Test(failed)">
+    <classes>
+      <class name="co.za.absa.Test.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- co.za.absa.Test.LoginPageTest -->
+      <class name="co.za.absa.Test.SplitPasswordPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="enterParaPhraseTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- co.za.absa.Test.SplitPasswordPageTest -->
+    </classes>
+  </test> <!-- Absa Online Banking Test(failed) -->
 </suite> <!-- Failed suite [Absa Online Banking] -->

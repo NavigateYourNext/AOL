@@ -47,7 +47,7 @@ public class SplitPasswordPageTest extends BaseClass
 	
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	@Parameters({"passphrase"})
-	public void enterParaPhraseTest(@Optional("password")String passphrase)
+	public void enterParaPhraseTest(@Optional("password1")String passphrase)
 	{
 		homePage = splitPasswordPage.enterParaphrase(passphrase);
 		extentTest.log(LogStatus.INFO, "Enter Para Phrase Method Ended");

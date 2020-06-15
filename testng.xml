@@ -4,7 +4,7 @@
 
 	<parameter name="accountNumber" value="9050955490" />
 	<parameter name="pinNumber" value="55490" />
-	<parameter name="passphrase" value="password" />
+	<parameter name="passphrase" value="password1" />
 
 	<test name="Absa Online Banking Test">
 
