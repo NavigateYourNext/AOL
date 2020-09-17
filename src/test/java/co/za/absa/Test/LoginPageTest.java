@@ -17,6 +17,8 @@ import co.za.absa.TestUtilities.RetryAnalyzer;
 import co.za.absa.WebPages.LoginPage;
 import co.za.absa.WebPages.SplitPasswordPage;
 
+//This is LoginPage
+
 public class LoginPageTest extends BaseClass 
 {
 	LoginPage loginPage;
