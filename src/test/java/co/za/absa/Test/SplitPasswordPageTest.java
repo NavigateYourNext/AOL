@@ -33,7 +33,7 @@ public class SplitPasswordPageTest extends BaseClass
 	@Parameters({"accountNumber","pinNumber"})
 	public void setUp(@Optional("9050955490")String accountNumber,@Optional("55490")String pinNumber) throws Exception
 	{
-		closeExistingBrowser();
+		//closeExistingBrowser();
 		initialisation();
 		
 		extentTest = extentReports.startTest("HomePage Login Test");
@@ -78,6 +78,8 @@ public class SplitPasswordPageTest extends BaseClass
 		
 		extentReports.endTest(extentTest);
 		logger.info("Test Ended: "+extentTest.getTest());
+		
+		
 	}
 	
 	@AfterTest

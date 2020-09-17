@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Absa Online Banking]">
   <parameter name="pinNumber" value="55490"/>
-  <parameter name="passphrase" value="password"/>
+  <parameter name="passphrase" value="password1"/>
   <parameter name="accountNumber" value="9050955490"/>
   <test name="Absa Online Banking Test">
     <classes>
@@ -10,22 +10,4 @@
       <class name="co.za.absa.Test.SplitPasswordPageTest"/>
     </classes>
   </test> <!-- Absa Online Banking Test -->
-  <test name="Absa Online Banking Test(failed)">
-    <classes>
-      <class name="co.za.absa.Test.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="flushReport"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- co.za.absa.Test.LoginPageTest -->
-      <class name="co.za.absa.Test.SplitPasswordPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="flushReport"/>
-          <include name="enterParaPhraseTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- co.za.absa.Test.SplitPasswordPageTest -->
-    </classes>
-  </test> <!-- Absa Online Banking Test(failed) -->
 </suite> <!-- Failed suite [Absa Online Banking] -->

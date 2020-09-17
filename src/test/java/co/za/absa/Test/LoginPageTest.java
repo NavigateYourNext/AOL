@@ -31,7 +31,7 @@ public class LoginPageTest extends BaseClass
 	@BeforeMethod
 	public void setUp() throws Exception
 	{
-		closeExistingBrowser();
+		//closeExistingBrowser();
 		initialisation();
 		
 		logger.info("Driver Initiated");

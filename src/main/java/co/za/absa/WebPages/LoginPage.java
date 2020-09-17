@@ -32,6 +32,7 @@ public class LoginPage extends BaseClass
 	{
 		accountNumber.sendKeys(accNumber);
 		extentTest.log(LogStatus.INFO, "Account Number Entered As : "+accNumber);
+		Thread.sleep(1000);
 		logger.info("Enterd Account Number Is: "+accNumber);
 		pinNumber.sendKeys(pin);
 		extentTest.log(LogStatus.INFO, "PIN Number Entered As : "+pin);
