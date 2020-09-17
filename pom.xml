@@ -17,7 +17,9 @@
 		<webdriver.version>2.53.1</webdriver.version>
 		<java.version>1.8</java.version>
 	</properties>
-
+	
+	<!-- All Dependencies -->
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
